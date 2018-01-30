@@ -38,7 +38,7 @@ $('#city-type').change(function(event){
   else if(userInput===cities[4]){
     $("body").css('background', 'url(images/sydney.jpg)')//$('body').addClass("sydney")
   }
-  
+
 })
 
 // $('#city-type').append(optionTags) //just adds to it html function repalcrs it
