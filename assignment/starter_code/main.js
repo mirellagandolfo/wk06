@@ -5,17 +5,14 @@ var cities =['nyc', 'la','austin', 'sf', 'sydney'] // array of cities - array al
 
 // try in cosole: $('#city-type').append('<option>nyc</option>') a line for each option tag OR just set an variable as 'optionTags'...
 
-// $('#city-type').append('<option>'+cites[0]+'</option>');
-// $('#city-type').append('<option>'+cites[1]+'</option>');
-// $('#city-type').append('<option>'+cites[2]+'</option>');
-// $('#city-type').append('<option>'+cites[3]+'</option>');
-// $('#city-type').append('<option>'+cites[4]+'</option>');
 
+// step 1: add option tags into select box
 cities.forEach(function(city){ //for each elemetn called cities we are re
   //for each array allows me to loop through array - then each city we can run function
 $('#city-type').append('<option>'+city+'</option>');
 })
 
+// step 2: when user changes an option, show the correct background image
 $('#city-type').change(function(event){
   event.preventDefault()
 
